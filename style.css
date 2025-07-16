@@ -13,20 +13,34 @@
     font-size: 50px;
 
 }
+.sidepanel{
+    grid-column:2;
+    display:flex;
+    flex-direction: column;
+}
 .projects{
     background-color:lightslategray;
     display:grid;
-    grid-template-columns: 40% 40% 20%;
-    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
     border: 5px solid black;
     font-size: 50px;
+    gap:20px;
+    padding:20px;
+    
+}
+.projectlist{
+    display:grid;
+    grid-column: 1;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+    padding:20px;
 }
 .project{
     border: 5px solid black;
     height: 200px;
-    width: 400px;
     background-color: white;
-
+    
 }
 .header{
     display:flex;
@@ -49,4 +63,22 @@ button{
     height:150px;
     width: 200px;
     font-size: 50px;
+}
+.Announcementslist{
+    height: 100px;
+    background-color: white;
+}
+.trendingbox{
+    height: 100px;
+    background-color: white;
+}
+.search{
+    background-color: grey;
+    border-radius: 10px;
+    height:100px;
+    width:1000px;
+}
+.Announcementslist,.trendingbox{
+    font-size: 30px;
+    margin-bottom: 20px;
 }
